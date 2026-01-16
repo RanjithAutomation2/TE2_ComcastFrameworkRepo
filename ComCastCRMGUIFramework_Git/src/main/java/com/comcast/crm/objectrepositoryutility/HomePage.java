@@ -28,6 +28,10 @@ public class HomePage {
 	private WebElement moreLink;
 	
 	
+	//new element in local repo
+	@FindBy(linkText = "Documents")
+	private WebElement documentLink;
+	
 	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
 	@FindBy(linkText = "Sign Out")
@@ -62,6 +66,10 @@ public class HomePage {
 	}
 	public WebElement getMoreLink() {
 		return moreLink;
+	}
+	
+	public WebElement getDocumentLink() {
+		return documentLink;
 	}
 	public void navigateToCampagin() {
 		Actions act=new Actions(driver);
