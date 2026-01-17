@@ -9,7 +9,7 @@ public class DocumentPage {
 	public DocumentPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(xpath = "//img[@alt='Create Document...']")
+	@FindBy(xpath = "//img[@alt='Create Document...'] ")
 	private WebElement createNewDocumentBtn;
 	public WebElement getCreateNewDocumentBtn() {
 		return createNewDocumentBtn;
